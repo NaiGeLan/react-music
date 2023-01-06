@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const baseUrl = 'http://localhost:3000';
+export const baseUrl = 'http://localhost:4000';
 
 //axios 的实例及拦截器配置
 const axiosInstance = axios.create ({
@@ -8,9 +8,11 @@ const axiosInstance = axios.create ({
 });
 
 axiosInstance.interceptors.response.use (
-  res => res.data,
+  res =>  {
+    return Promise.resolve(res.data)
+  },
   err => {
-    console.log (err, "网络错误");
+    return Promise.reject(err)
   }
 );
 

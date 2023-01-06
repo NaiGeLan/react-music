@@ -7,7 +7,6 @@ import {
 import { getCount } from '../../util/getCount';
 function RecommendList(props){
   const {recommendList} = props
-  console.log(recommendList);
   return (
     <ListWrapper>
       <h1 className='title'>推荐歌单</h1>

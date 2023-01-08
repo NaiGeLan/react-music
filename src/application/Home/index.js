@@ -6,7 +6,7 @@ function Home (props) {
     <div>
       <Top>
         <span className="iconfont menu">&#xe65c;</span>
-        <span className="title">Web App</span>
+        <span className="title">NaiGeLan App</span>
         <span className="iconfont search">&#xe62b;</span>
       </Top>
       <Tabbar>

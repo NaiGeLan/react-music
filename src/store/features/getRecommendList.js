@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 // import { fromJS } from 'immutable';
 import { getBannerRequest, getRecommendListRequest } from '../../api/request'
 const initialState = {
-  loading:false,
+  loading: true,
   bannerList: [],
   recommendList: [],
 }

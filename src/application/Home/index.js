@@ -14,8 +14,6 @@ function Home (props) {
         <NavLink to="/singers"><TabbarItem><span>歌手</span></TabbarItem></NavLink>
         <NavLink to="/rank"><TabbarItem><span>排行榜</span></TabbarItem></NavLink>
       </Tabbar>
-      
-
       <Outlet></Outlet>
     </div>
   )
